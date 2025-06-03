@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Product Dashboard with Material UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![Material UI](https://img.shields.io/badge/Material%20UI-5.14.0-blueviolet)
 
-## Available Scripts
+A responsive product dashboard built with React and Material UI, designed to practice component composition, theming, and responsive layout techniques.
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+- 🎨 Custom Material UI theme with modified color palette and typography
+- 📱 Fully responsive grid layout using MUI's Grid system
+- ♻️ Reusable `ProductCard` component
+- 🛒 Integrated Material UI icons
+- 🧪 Basic test coverage for core functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Setup & Theming
+- Created with Create React App
+- Custom theme configuration (primary/secondary colors, typography)
 
-### `npm test`
+### Dashboard Components
+- Responsive Grid layout displaying ≥4 products
+- Each product card displays:
+  - Product name
+  - Description
+  - Price
+  - Material UI icon
+- Custom "Buy"/"Details" buttons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technical Implementation
+- Created reusable `ProductCard` component
+- Integrated Material UI icons (minimum 1 per card)
+- Applied styling via `sx` prop and inline styles
+- Implemented responsive behavior using `xs`, `sm`, `md` Grid props
+- Included basic test in `App.test.js`
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
+1. Clone the repository
+   ```bash
+   git clone [repository-url]
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Start the development server
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Testing
+Run the test suite to verify component rendering:
+```bash
+npm test
+```
 
-### `npm run eject`
+## Project Structure
+```
+/src
+├── components
+│   └── ProductCard.js  # Reusable product component
+├── theme
+│   └── theme.js        # Custom MUI theme configuration
+├── App.js              # Main application component
+└── App.test.js         # Basic rendering tests
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Potential Enhancements
+- Add product filtering functionality
+- Implement dark mode toggle
+- Connect to real product API
+- Add shopping cart feature
